@@ -1,0 +1,241 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.row {
+  margin: auto;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  box-shadow: 0px -5px 10px #1e1e1e;
+  transition: width 600ms ease;
+  z-index: 100;
+  max-height: 17rem;
+  background-color: white;
+}
+
+nav #innerNav {
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.nav-link {
+  color: #363636;
+  font-weight: 500;
+  margin: 0px 10px;
+  border: 2px solid white;
+  padding: auto;
+}
+
+.nav-link:hover, .nav-link:active {
+  border-bottom: 2px solid #363636;
+  margin: 0px 10px;
+  padding: auto;
+}
+
+.nav-link-icon {
+  border: none;
+  padding: 0px 10px;
+  color: #363636;
+}
+
+.nav-link-icon:hover {
+  border: none;
+  padding: 0px 10px;
+  opacity: 80%;
+}
+
+.dropdown-menu {
+  transform: translate(-35%, 0);
+  box-shadow: 3px 3px 10px #36363621;
+}
+
+/* Login Page */
+.mainViewArea {
+  background-image: linear-gradient(to right, #D3D7EA , #C2EFDF, #F2E590, #EFB9C8);
+  height: 100vh;
+  /* margin-top: -20px; */
+}
+
+.mainSection {
+  position: absolute;
+  max-width: 70%;
+  padding: 50px 70px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: white;
+  border: 1.5px solid #363636;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px #1e1e1e37;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=date], .form-select, input[type=file] {
+  transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, input[type=email]:focus, input[type=file]:focus, input[type=password]:focus, input[type=date]:focus, .form-select:focus {
+  box-shadow: 0 0 5px #a954f8;
+  border: 1px solid #B15EFF;
+}
+
+.btn-proceed {
+  border: 1.5px solid #363636;
+  background-color: white;
+  color: #363636;
+  font-weight: 500;
+  padding: 8px 20px;
+  margin: auto;
+}
+
+.btn-proceed:hover, .btn-proceed:focus {
+  border: 1.5px solid black;
+  background-color: #f8e043;
+  color: #1e1e1e;
+  font-weight: 500;
+}
+
+/* Profile Settings */
+.mainViewArea-ProfSet {
+  background-image: linear-gradient(to right, #D3D7EA , #C2EFDF, #F2E590, #EFB9C8);
+  height: 100vh;
+}
+
+.profInpBtn {
+  border: 1px solid #a954f8;
+  border-radius: 1px;
+  color: #a954f8;
+}
+
+.profInpBtn:hover {
+  border: 1px solid #a954f8;
+  box-shadow: 2px 2px #B15EFF;
+  border-radius: 1px;
+  color: #a954f8;
+  font-weight: 500;
+}
+
+.dashboard-bg {
+  height: 250vh;
+  background-color: whitesmoke;
+}
+
+.profile-info {
+  position: absolute;
+  top: 15%;
+  right: 50%;
+  transform: translate(50%, 0%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 3px 5px #1e1e1e37;
+  border-radius: 6px;
+}
+
+.dash-info {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+}
+
+.prof-img {
+  margin-top: -100px;
+  border: 8px solid white;
+  border-radius: 50%;
+  margin-inline-start: 20px;
+}
+
+.actBtns .btn {
+  border-radius: 40px;
+  padding-inline: 23px;
+}
+
+.work-space {
+  display: flex;
+  flex-direction: column; 
+}
+
+
+/* projects */
+.project-main {
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.proj-container {
+  position: absolute;
+  top: 16%;
+  right: 50%;
+  transform: translate(50%, 0%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 3px 5px #1e1e1e37;
+  border-radius: 6px;
+}
+
+.proj-section {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  padding: 20px;
+  width: 100vh;
+}
+
+.main-area {
+  border: 2px dashed #7474744c;
+  padding: 20%;
+  color: #747474;
+  border-radius: 10px;
+}
+
+.dialogue-area {
+  padding-top: 3%;
+  color: #363636;
+}
+
+.proj-section .btn-sec .btn {
+  border-radius: 50px;
+  padding: 10px 25px;
+}
+/* mobile screen */
