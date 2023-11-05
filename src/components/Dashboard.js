@@ -10,7 +10,7 @@ export default function Dashboard() {
         <div className='profile-info'>
           <div className="container">
             <div className="dash-info">
-              <div className="prof-cov my-3">
+              <div className="prof-cov" style={{marginTop: '3%'}}>
                 <span className='cover-img'>
                   <div className='rounded mx-auto' style={{ height: '200px', opacity: '100%', zIndex: '-2', backgroundImage: `url(${coverImg})`, backgroundSize: 'cover' }}></div>
                 </span>
@@ -23,9 +23,14 @@ export default function Dashboard() {
                 <div className="actBtns">
                   <button className='btn btn-outline-warning me-2 my-2' type='button'>Follow</button>
                   <button className='btn btn-outline-primary mx-1 my-2' type='button'>Message</button>
-                  <button className='btn btn-outline-dark mx-2 my-2' type='button'>
-                    <img src={more} alt="" style={{ height: '20px' }} />
-                  </button>
+                  <span className='dropdown'>
+                    <button className='btn btn-outline-dark mx-2 my-2' type='button' data-bs-toggle="dropdown" aria-expanded="false" to="dropdown-menu">
+                      <img src={more} alt="" style={{ height: '20px' }} />
+                      <ul className="dropdown-menu">
+                        <li>Share account</li>
+                      </ul>
+                    </button>
+                  </span>
                 </div>
               </span>
             </div>
@@ -54,7 +59,7 @@ export default function Dashboard() {
                       <div className="card mb-3">
                         <div className="row g-0">
                           <div className="col-md-4">
-                            <img src={coverImg} className="img-fluid rounded-start" alt="..." style={{objectFit: 'cover'}} />
+                            <img src={coverImg} className="img-fluid rounded-start" alt="..." style={{ objectFit: 'cover' }} />
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
@@ -68,7 +73,7 @@ export default function Dashboard() {
                       <div className="card mb-3">
                         <div className="row g-0">
                           <div className="col-md-4">
-                            <img src={coverImg} className="img-fluid rounded-start" alt="..." style={{objectFit: 'cover'}} />
+                            <img src={coverImg} className="img-fluid rounded-start" alt="..." style={{ objectFit: 'cover' }} />
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
@@ -82,7 +87,7 @@ export default function Dashboard() {
                       <div className="card mb-3">
                         <div className="row g-0">
                           <div className="col-md-4">
-                            <img src={coverImg} className="img-fluid rounded-start" alt="..." style={{objectFit: 'cover'}} />
+                            <img src={coverImg} className="img-fluid rounded-start" alt="..." style={{ objectFit: 'cover' }} />
                           </div>
                           <div className="col-md-8">
                             <div className="card-body">
